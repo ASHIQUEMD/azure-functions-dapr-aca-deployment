@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "5239b29a-786e-4333-bff0-31c0023ce05a",
+		"name": "Dapr Azure Functions ACA Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10866686"
+	},
+	"item": [
+		{
+			"name": "DaprInvokeOutputBinding Invoke CreateNewOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"data\": {\n        \"value\": {\n            \"orderId\": \"12345\"\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{AzureFunctionURL}/api/invoke/{AzureFunctionName}/CreateNewOrder",
+					"host": [
+						"{AzureFunctionURL}"
+					],
+					"path": [
+						"api",
+						"invoke",
+						"{AzureFunctionName}",
+						"CreateNewOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HttpTrigger",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{AzureFunctionURL}/api/RetrieveOrder",
+					"host": [
+						"{AzureFunctionURL}"
+					],
+					"path": [
+						"api",
+						"RetrieveOrder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
