@@ -9,7 +9,7 @@ Bicep script will create below resources in Azure.
 4. Azure Redis cache
 5. Azure Function App
 
-Currently it has below dapr building blocks.
+Currently Azure Function sample has below dapr binding and triggers.
 
 1. Dapr Service Invocation Trigger
 2. Dapr Invoke output binding
