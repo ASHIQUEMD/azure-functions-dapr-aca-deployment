@@ -1,6 +1,15 @@
 # azure-functions-dapr-aca-deployment
 This repo contains bicep script to deploye a Dotnet Azure Function with Dapr extension in ACA.
 
+Running the bicep script
+
+```
+az group create --name {resourceGroupName} --location eastasia
+```
+```
+az deployment group create --resource-group {resourceGroupName} --template-file azure-functions-dapr-enabled-aca.bicep
+```
+
 Bicep script will create below resources in Azure.
 
 1. Azure Storage Account
