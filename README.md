@@ -1,5 +1,15 @@
 # azure-functions-dapr-aca-deployment
-This repo contains bicep script to deploye a Dotnet Azure Function with Dapr extension, currently it has below dapr building blocks.
+This repo contains bicep script to deploye a Dotnet Azure Function with Dapr extension.
+
+Bicep script will create below resources in Azure.
+
+1. Azure Storage Account
+2. App Insights
+3. ACA managed environment
+4. Azure Redis cache
+5. Azure Function App
+
+Currently it has below dapr building blocks.
 
 1. Dapr Service Invocation Trigger
 2. Dapr Invoke output binding
